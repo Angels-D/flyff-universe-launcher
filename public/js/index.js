@@ -25,16 +25,16 @@ function refreshGameProfileListTable() {
         let item = list[i];
         let buttonHtml = "";
         if (item.isSingleOpen) {
-            buttonHtml += ` <button onclick="onCloseSingleGame(${item.id})" type="button" class="btn btn-warning">關閉遊戲</button>`
-            buttonHtml += ` <button onclick="onOpenSingleGameSetting(${item.id}, '${item.name}')" type="button" class="btn btn-info">單視窗設定</button>`
+            buttonHtml += ` <button onclick="onCloseSingleGame(${item.id})" type="button" class="btn btn-warning">关闭游戏</button>`
+            buttonHtml += ` <button onclick="onOpenSingleGameSetting(${item.id}, '${item.name}')" type="button" class="btn btn-info">单视窗设定</button>`
         } else if (item.isMultiOpen) {
-            buttonHtml += ` <button onclick="onCloseMultiGame(${item.id})" type="button" class="btn btn-warning">關閉遊戲</button>`
+            buttonHtml += ` <button onclick="onCloseMultiGame(${item.id})" type="button" class="btn btn-warning">关闭游戏</button>`
         } else {
-            buttonHtml += ` <button onclick="onStartSingleGame(${item.id})" type="button" class="btn btn-primary">開始遊戲(單視窗)</button>`
-            buttonHtml += ` <button onclick="onStartMultiGame(${item.id})" type="button" class="btn btn-primary">開始遊戲(多視窗)</button>`
+            buttonHtml += ` <button onclick="onStartSingleGame(${item.id})" type="button" class="btn btn-primary">开始游戏(单视窗)</button>`
+            buttonHtml += ` <button onclick="onStartMultiGame(${item.id})" type="button" class="btn btn-primary">开始游戏(多视窗)</button>`
         }
-        buttonHtml += ` <button onclick="onOpenSetting(${item.id}, '${item.name}')" type="button" class="btn btn-success">更改名稱</button>`
-        buttonHtml += ` <button onclick="onRemoveGameProfile(${item.id})" type="button" class="btn btn-danger">刪除</button>`
+        buttonHtml += ` <button onclick="onOpenSetting(${item.id}, '${item.name}')" type="button" class="btn btn-success">更改名称</button>`
+        buttonHtml += ` <button onclick="onRemoveGameProfile(${item.id})" type="button" class="btn btn-danger">删除</button>`
 
         html +=
             `

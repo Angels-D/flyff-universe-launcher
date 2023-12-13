@@ -36,8 +36,6 @@ export default class GameSingleWindowManager {
             title: title,
             height: stateKeeper.height,
             width: stateKeeper.width,
-            minWidth: this.baseWindow.width,
-            minHeight: this.baseWindow.height,
             x: stateKeeper.x,
             y: stateKeeper.y,
             autoHideMenuBar: true,
@@ -67,7 +65,7 @@ export default class GameSingleWindowManager {
                 type: "warning",
                 buttons: ["是", "否"],
                 title: title,
-                message: "是否要關閉?",
+                message: "是否要关闭?",
             };
             dialog.showMessageBox(dialogOpts)
                 .then((returnValue) => {
@@ -120,8 +118,8 @@ export default class GameSingleWindowManager {
         if (this.gameWindowMap.has(profileId)) {
             const dialogOpts = {
                 type: "error",
-                title: "錯誤",
-                message: gameProfile.name + "遊戲已開啟",
+                title: "错误",
+                message: gameProfile.name + "游戏已开启",
             };
             await dialog.showMessageBox(dialogOpts);
             event.returnValue = false;

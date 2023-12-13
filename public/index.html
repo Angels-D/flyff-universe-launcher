@@ -20,8 +20,8 @@
                 <input type="text"
                        id="input-game-window-name"
                        class="form-control border-primary"
-                       placeholder="設定檔名稱"
-                       aria-label="設定檔名稱"
+                       placeholder="设定档名称"
+                       aria-label="设定档名称"
                        aria-describedby="button-add-game-button">
                 <button onclick="onAddGameProfile()"
                         class="btn btn-primary"
@@ -33,14 +33,14 @@
             <button onclick="onOpenMultiWindowSetting()"
                     class="btn btn-info mt-2"
                     type="button">
-                多視窗設定
+                多视窗设定
             </button>
 
             <div class="table-responsive">
                 <table class="table table-striped table-hover mt-2">
                     <thead>
                     <tr>
-                        <th scope="col">名稱</th>
+                        <th scope="col">名称</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -57,7 +57,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">設定</h5>
+                    <h5 class="modal-title">设定</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -65,7 +65,7 @@
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-window-setting" type="button" role="tab"
-                                    aria-controls="nav-home" aria-selected="true">視窗
+                                    aria-controls="nav-home" aria-selected="true">视窗
                             </button>
                         </div>
                     </nav>
@@ -73,8 +73,8 @@
                         <div class="tab-pane fade show active m-1 mt-2" id="nav-window-setting" role="tabpanel"
                              aria-labelledby="nav-window-setting">
 
-                            <select class="form-select mt-2" id="resolution-select" aria-label="請選擇解析度">
-                                <option value="-1" selected>請選擇解析度</option>
+                            <select class="form-select mt-2" id="resolution-select" aria-label="请选择清晰度">
+                                <option value="-1" selected>请选择清晰度</option>
                                 <option value="0">1280x720</option>
                                 <option value="1">1440x900</option>
                                 <option value="2">1660x900</option>
@@ -83,7 +83,7 @@
                             <div class="form-check mt-2">
                                 <input class="form-check-input" type="checkbox" value="" id="fullscreen-check">
                                 <label class="form-check-label" for="fullscreen-check">
-                                    全螢幕
+                                    全屏幕
                                 </label>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">設定</h5>
+                    <h5 class="modal-title">设定</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -105,8 +105,8 @@
                         <input type="text"
                                id="input-change-game-window-name"
                                class="form-control border-primary"
-                               placeholder="遊戲視窗名稱"
-                               aria-label="遊戲視窗名稱"
+                               placeholder="游戏视窗名称"
+                               aria-label="游戏视窗名称"
                                aria-describedby="button-add-game-button">
                         <button onclick="onChangeGameProfileName()"
                                 class="btn btn-primary"
@@ -124,57 +124,57 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">多視窗設定</h5>
+                    <h5 class="modal-title">多视窗设定</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
                     <div class="row">
-                        <h4 class="text-info">2個視窗</h4>
+                        <h4 class="text-info">2个视窗</h4>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-2-windows-size" id="2-50-100"
                                    value="1">
-                            <label class="form-check-label" for="2-50-100">高: 50% 寬: 100%</label>
+                            <label class="form-check-label" for="2-50-100">高: 50% 宽: 100%</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-2-windows-size" id="2-100-50"
                                    value="2">
-                            <label class="form-check-label" for="2-100-50">高: 100% 寬: 50%</label>
+                            <label class="form-check-label" for="2-100-50">高: 100% 宽: 50%</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-2-windows-size" id="2-100-100"
                                    value="3">
-                            <label class="form-check-label" for="2-100-100">高: 100% 寬: 100%</label>
+                            <label class="form-check-label" for="2-100-100">高: 100% 宽: 100%</label>
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <h4 class="text-info">3個視窗以上</h4>
+                        <h4 class="text-info">3个视窗以上</h4>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-more-windows-size" id="50-100"
                                    value="1">
-                            <label class="form-check-label" for="50-100">高: 50% 寬: 100%</label>
+                            <label class="form-check-label" for="50-100">高: 50% 宽: 100%</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-more-windows-size" id="100-50"
                                    value="2">
-                            <label class="form-check-label" for="100-50">高: 100% 寬: 50%</label>
+                            <label class="form-check-label" for="100-50">高: 100% 宽: 50%</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-more-windows-size" id="100-100"
                                    value="3">
-                            <label class="form-check-label" for="100-100">高: 100% 寬: 100%</label>
+                            <label class="form-check-label" for="100-100">高: 100% 宽: 100%</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="multi-more-windows-size" id="50-50"
                                    value="4">
-                            <label class="form-check-label" for="50-50">高: 50% 寬: 50%</label>
+                            <label class="form-check-label" for="50-50">高: 50% 宽: 50%</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                    <button type="button" onclick="onSaveMultiWindowSetting()" class="btn btn-primary">確定</button>
+                    <button type="button" onclick="onSaveMultiWindowSetting()" class="btn btn-primary">确定</button>
                 </div>
 
             </div>

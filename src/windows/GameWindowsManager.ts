@@ -72,8 +72,8 @@ export default class GameWindowsManager {
         if (!gameProfile) {
             const dialogOpts = {
                 type: "error",
-                title: "錯誤",
-                message: "找不到設定檔案",
+                title: "错误",
+                message: "找不到设定档案",
             };
             dialog.showMessageBox(dialogOpts)
                 .then(() => {

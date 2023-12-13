@@ -3,11 +3,9 @@ const builder = require('electron-builder');
 const pg = require('./package.json');
 
 builder.build({
-    // 專案路徑
+    win: [],
+    linux: [],
     projectDir: path.resolve(__dirname),
-    // nsis . portable
-    win: ['portable'],
-    publish: null,
     config: {
         files: [
             "dist/main.js",
@@ -20,9 +18,7 @@ builder.build({
             }
         ],
         appId: pg.appId,
-        // 應用程式名稱 ( 顯示在應用程式與功能 )
         productName: "flyff universe launcher",
-        artifactName: "flyff universe launcher" + ".exe",
         directories: {
             "output": "build/win/" + pg.version
         },
@@ -30,13 +26,22 @@ builder.build({
             "allowToChangeInstallationDirectory": true,
             "oneClick": false,
         },
-        win: {
+        win: { 
             icon: path.resolve(__dirname, 'icon/icon.png'),
-            publisherName: pg.name,
+            target: {
+                target: 'nsis',
+                arch: 'x64'
+            }
+        },
+        linux: {
+            icon: path.resolve(__dirname, 'icon/icon.png'),
+            target: {
+                target: 'AppImage',
+                arch: [ 'x64','arm64' ]
+            }
         }
     },
-})
-    .then(
-        data => console.log(data),
-        err => console.error(err)
-    );
+}).then(
+    data => console.log(data),
+    err => console.error(err)
+);

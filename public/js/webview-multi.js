@@ -83,29 +83,29 @@ function getCssBySize(size) {
         case 2:
             let value = setting["2"];
             if (value === "1") {
-                //高50% 寬100%
+                //高50% 宽100%
                 cssStr = "col-md-12 m-0 p-0";
             } else if (value === "2") {
-                // 高100% 寬50%
+                // 高100% 宽50%
                 cssStr = "col-md-6 m-0 p-0";
             } else {
-                // 高100% 寬100%
+                // 高100% 宽100%
                 cssStr = "col-md-12 m-0 p-0";
             }
             break;
         default:
             let moreValue = setting["more"];
             if (moreValue === "1") {
-                //高50% 寬100%
+                //高50% 宽100%
                 cssStr = "col-md-12 m-0 p-0";
             } else if (moreValue === "2") {
-                // 高100% 寬50%
+                // 高100% 宽50%
                 cssStr = "col-md-6 m-0 p-0";
             } else if (moreValue === "3") {
-                // 高100% 寬100%
+                // 高100% 宽100%
                 cssStr = "col-md-12 m-0 p-0";
             } else {
-                // 高50% 寬50%
+                // 高50% 宽50%
                 cssStr = "col-md-6 m-0 p-0"
             }
             break;
@@ -131,28 +131,28 @@ function getHeightBySize(size) {
     } else if (size === 2) {
         let value = setting["2"];
         if (value === "1") {
-            //高50% 寬100%
+            //高50% 宽100%
             return "50vh";
         } else if (value === "2") {
-            // 高100% 寬50%
+            // 高100% 宽50%
             return "100vh";
         } else {
-            // 高100% 寬100%
+            // 高100% 宽100%
             return "100vh";
         }
     } else {
         let moreValue = setting["more"];
         if (moreValue === "1") {
-            //高50% 寬100%
+            //高50% 宽100%
             return "50vh";
         } else if (moreValue === "2") {
-            // 高100% 寬50%
+            // 高100% 宽50%
             return "100vh";
         } else if (moreValue === "3") {
-            // 高100% 寬100%
+            // 高100% 宽100%
             return "100vh";
         } else {
-            // 高50% 寬50%
+            // 高50% 宽50%
             return "50vh";
         }
     }

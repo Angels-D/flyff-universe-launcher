@@ -48,8 +48,6 @@ export default class GameMultiWindowManager {
         const multiWindow = new BrowserWindow({
             height: stateKeeper.height,
             width: stateKeeper.width,
-            minWidth: this.baseWindow.width,
-            minHeight: this.baseWindow.height,
             x: stateKeeper.x,
             y: stateKeeper.y,
             autoHideMenuBar: true,
@@ -80,7 +78,7 @@ export default class GameMultiWindowManager {
                 type: "warning",
                 buttons: ["是", "否"],
                 title: multiWindow.getTitle(),
-                message: "是否要關閉?",
+                message: "是否要关闭?",
             };
             dialog.showMessageBox(dialogOpts)
                 .then((returnValue) => {
